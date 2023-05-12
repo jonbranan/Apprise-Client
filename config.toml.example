@@ -1,0 +1,6 @@
+[apprise]
+host = "192.168.x.x"
+port = 8088
+aurls = 'mailto://user:pass@gmail.com'
+title = 'test title'
+body = 'test body'
