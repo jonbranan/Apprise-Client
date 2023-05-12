@@ -11,5 +11,6 @@ def apprise_notify(req_obj, host, port, aurls, title, body):
     apprise_response = req_obj.post(url, json = payload ,verify=False)
     return apprise_response
 
-a = apprise_notify(r,config["apprise"]["host"],config["apprise"]["port"],config["apprise"]["aurls"],\
-                   config["apprise"]["title"],config["apprise"]["body"])
+if __name__ == "__main__":
+    a = apprise_notify(r,config["apprise"]["host"],config["apprise"]["port"],config["apprise"]["aurls"],\
+                       config["apprise"]["title"],config["apprise"]["body"])
