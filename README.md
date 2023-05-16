@@ -1,4 +1,4 @@
-# Apprise-Client
+# apprise-client
 
 > This is meant to be a wrapper to use apprise in existing python projects. 
 
@@ -11,7 +11,7 @@ From the Apprise Developers
 You may simply import my wrapper *apprise_notify()* into your project
 > apprise_notify()
 
-    from Apprise-Client import apprise_notify
+    from apprise-client import apprise_notify
 
 
 It requires a *requests object* along with the following:
@@ -25,7 +25,7 @@ It requires a *requests object* along with the following:
 
  
     import  requests  as  r
-    from Apprise-Client import apprise_notify
+    from apprise-client import apprise_notify
     
     host = "192.168.1.50"
 	port = 8088
@@ -39,7 +39,7 @@ It requires a *requests object* along with the following:
 
     import  requests  as  r
     from  tomllib  import  load
-    from Apprise-Client import apprise_notify
+    from apprise-client import apprise_notify
     
     config_file_path  =  './config.toml'
     
