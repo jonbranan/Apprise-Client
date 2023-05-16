@@ -1,7 +1,12 @@
 import requests as r
 from tomllib import load
+import os
 
-config_file_path = './config.toml'
+if os.environ["toml_path"]:
+     config_file_path=os.environ["toml_path"]
+else:
+    config_file_path = './config.toml'
+
 with open(config_file_path, 'rb') as c:
         config = load(c)
 
